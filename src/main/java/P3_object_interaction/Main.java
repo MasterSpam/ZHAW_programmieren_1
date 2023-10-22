@@ -6,8 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
         Uhrenanzeige uhrenanzeige1 = new Uhrenanzeige();
         Uhrenanzeige uhrenanzeige2 = new Uhrenanzeige(12, 34, 59);
 
