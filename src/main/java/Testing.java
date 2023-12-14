@@ -1,20 +1,28 @@
-import java.util.ArrayList;
+class Haustier {
+    public void bellen() {
+        System.out.println("Das Haustier bellt");
+    }
+}
+
+class Hund extends Haustier {
+    public void bellen() {
+        System.out.println("Der Hund bellt");
+    }
+}
+
+class Dogge extends Hund {
+    // Die Dogge erbt die bellen-Methode von Hund
+    public void bellen() {
+        System.out.println("Die Dogge bellt");
+    }
+}
 
 public class Testing {
-
     public static void main(String[] args) {
 
-        ArrayList<Integer> al = new ArrayList<>();
-        int i = 12;
-        Integer iObj;
 
-
-
-        al.add(Integer.valueOf(100));  // 1
-        al.add(25);                // 2
-        al.add(i);                 // 3
-        i = al.remove(0);          // 4
-        iObj = al.remove(0);       // 5
+        Haustier tier = new Dogge();
+        tier.bellen();
 
     }
 }
